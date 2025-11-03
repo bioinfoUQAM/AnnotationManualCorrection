@@ -216,7 +216,7 @@ class AnnotationCorrectionTool:
         
         self.checkboxes = {}
         
-        # Créer les checkboxes en grille (3 colonnes)
+        # Créer les checkboxes en grille (4 colonnes)
         for idx, behavior in enumerate(self.behavior_columns):
             row = idx // 4
             col = idx % 4
@@ -397,7 +397,7 @@ class AnnotationCorrectionTool:
             self.update_current_annotations(self.current_frame_idx)
             
             num_frames = end_idx - start_idx + 1
-            #messagebox.showinfo("Succès", f"Annotations appliquées à {num_frames} frames (de {start_frame} à {end_frame}).")
+            messagebox.showinfo("Succès", f"Annotations appliquées à {num_frames} frames (de {start_frame} à {end_frame}).")
             
         except ValueError:
             messagebox.showerror("Erreur", "Veuillez entrer des numéros de frame valides.")
@@ -416,7 +416,7 @@ class AnnotationCorrectionTool:
         self.update_current_annotations(self.current_frame_idx)
         
         
-        #messagebox.showinfo("Succès", f"Annotation de la frame {self.annotations_df.iloc[self.current_frame_idx]['Frame']} mise à jour.")
+        messagebox.showinfo("Succès", f"Annotation de la frame {self.annotations_df.iloc[self.current_frame_idx]['Frame']} mise à jour.")
         
         # Passer à la frame suivante
         self.next_frame()
