@@ -67,11 +67,3 @@ Frame,Grooming,Feeding,Resting
 ## Screenshots
 
 *coming soon*
-
-## License
-
-*Add your license here (MIT, GPL, etc).*
-
-## Credits
-
-Developed by Lina AGGOUNE.
